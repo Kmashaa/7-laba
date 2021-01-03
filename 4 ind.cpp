@@ -1,4 +1,4 @@
-//При вводе букв использовать только большие буквы
+//ГЏГ°ГЁ ГўГўГ®Г¤ГҐ ГЎГіГЄГў ГЁГ±ГЇГ®Г«ГјГ§Г®ГўГ ГІГј ГІГ®Г«ГјГЄГ® ГЎГ®Г«ГјГёГЁГҐ ГЎГіГЄГўГ»
 
 
 #include <iostream>
@@ -84,6 +84,7 @@ string addition(string number1, string number2, string fnumber, string snumber, 
 
 		}
 	}
+	sum.erase(0,2);
 	return(sum);
 }
 string substraction(string number1, string number2, string oper, string sub) {
@@ -147,7 +148,9 @@ string substraction(string number1, string number2, string oper, string sub) {
 	} if (i1 > i2) {
 		string digit; digit = number1[0];
 		sub.insert(2, "I");
-	} return(sub);
+	} 
+	sub.erase(0,2);
+	return(sub);
 }
 int main() {
 	cout << "Enter the first number in base 19:";
